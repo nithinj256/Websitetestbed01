@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #073B3A; /* Light cyan background */
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #6BBF59;
+}
+
+.calculator {
+    width: 320px;  
+    height: 480px;
+    border: 2px solid #0B6E4F;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #08A045; /* White background for the calculator */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.calculator-keys button {
+    height: 60px;
+    border: none;
+    background-color: #c0c0c0; /* Grey background for buttons */
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-keys button.operator {
+    background-color: #ddb771; /* Orange background for operator buttons */
+    color: #fff;
+}
+
+.calculator-keys button.equal-sign {
+    background-color: #ddb771; /* Orange background for the equal sign */
+    color: #fff;
+    grid-column: span 2;
+}
+
+.calculator-keys button.all-clear {
+    background-color: #a9261f; /* Red background for the AC button */
+    color: #fff;
+}
